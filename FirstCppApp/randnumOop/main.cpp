@@ -51,10 +51,12 @@ int main()
 		R.Generate(); // 정의로 이동 F12, BACK Ctrl - ;
 		A.Prompt();
 		while (1) {
-			if (A.AskNumber()) {
+			if (A.AskNumber()) 
+			{
 				exit(EXIT_SUCCESS);
 			}
-			if (R.Compare(A.GetInput())) {
+			if (R.Compare(A.GetInput())) 
+			{
 				break;
 			}
 		}
